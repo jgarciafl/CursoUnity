@@ -1,4 +1,0 @@
-#Sun Sep 18 21:14:57 CEST 2022
-base.0=G\:\\Dev\\Super Pum Movil\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

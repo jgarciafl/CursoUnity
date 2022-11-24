@@ -63,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -124,15 +124,15 @@ TextureImporter:
         y: 2
         width: 26
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: c2b11b355bfe2e04394a5203eef3c553
-      internalID: 1922684736
+      internalID: 5479630180728975389
       vertices: []
       indices: 
       edges: []
@@ -145,15 +145,15 @@ TextureImporter:
         y: 2
         width: 27
         height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b1e311e87a5c3334b867b8e7915a5e25
-      internalID: -1502576402
+      internalID: -5208231337745475199
       vertices: []
       indices: 
       edges: []
@@ -166,15 +166,15 @@ TextureImporter:
         y: 4
         width: 41
         height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 4acd1b6b9f20bb9419161d73a957a21e
-      internalID: 2101267042
+      internalID: 7916861723275202736
       vertices: []
       indices: 
       edges: []
@@ -187,15 +187,15 @@ TextureImporter:
         y: 4
         width: 41
         height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 64fa7867ef4c4a14db306f2c54cd11d3
-      internalID: -881550484
+      internalID: -6010437183881538340
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerSheet2_1: -1502576402
-      PlayerSheet2_0: 1922684736
-      PlayerSheet2_2: 2101267042
-      PlayerSheet2_3: -881550484
+      PlayerSheet2_1: -5208231337745475199
+      PlayerSheet2_0: 5479630180728975389
+      PlayerSheet2_2: 7916861723275202736
+      PlayerSheet2_3: -6010437183881538340
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

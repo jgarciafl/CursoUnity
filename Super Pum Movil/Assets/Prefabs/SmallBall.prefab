@@ -124,7 +124,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.22
+  m_Radius: 0.2
 --- !u!114 &1577588256421146334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +143,6 @@ MonoBehaviour:
   childBalls: {fileID: 0}
   numbreOfChildBalls: 0
   sizeOfBall: 0
-  pop: {fileID: 8300000, guid: 17f477ee524e4314f96a219f9d62c912, type: 3}
   isOriginalEnemy: 0
 --- !u!82 &4086289337488083615
 AudioSource:

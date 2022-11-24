@@ -30,9 +30,6 @@ public class AdvancedPlayerController : BasicPlayerController
     private int _animIDShooting;
     private int _animIDDyingLeft;
     private int _animIDDyingRight;
-    private int _animIDMotionSpeed;
-    private int _animationIDShoot;
-
 
 
     new private void Awake()
@@ -51,12 +48,7 @@ public class AdvancedPlayerController : BasicPlayerController
         _animIDWalking = Animator.StringToHash("Walking");
         _animIDShooting = Animator.StringToHash("Shooting");
         _animIDDyingLeft = Animator.StringToHash("DyingLeft");
-        _animIDDyingRight = Animator.StringToHash("DyingRight");
-        
-        
-        _animationIDShoot = Animator.StringToHash("Shoot");       
-        
-        
+        _animIDDyingRight = Animator.StringToHash("DyingRight");        
     }
 
 
@@ -103,17 +95,20 @@ public class AdvancedPlayerController : BasicPlayerController
     }
 
 
-    public IEnumerator CheckAnimationCompleted(string CurrentAnim, Action Oncomplete)
-    {
-        yield return new WaitForEndOfFrame();
+    //public IEnumerator CheckAnimationCompleted(string CurrentAnim, Action Oncomplete)
+    //{
+    //    yield return new WaitForEndOfFrame();
 
-        while (_animator.GetCurrentAnimatorStateInfo(0).IsName(CurrentAnim))
-            yield return null;
-        if (Oncomplete != null)
-            Oncomplete();
-    }
+    //    while (_animator.GetCurrentAnimatorStateInfo(0).IsName(CurrentAnim))
+    //        yield return null;
+    //    if (Oncomplete != null)
+    //        Oncomplete();
+    //}
      
-
+    void FinalizarDisparar() 
+    {
+        isShooting = false;
+    }
 
     public void FinishAnimationShoot()
     {
@@ -178,11 +173,11 @@ public class AdvancedPlayerController : BasicPlayerController
             _animator.SetTrigger(_animIDShooting);
 
            
-            StartCoroutine(CheckAnimationCompleted("Shoot", () =>
-			{
-				FinishAnimationShoot();
-			}
-            ));
+   //         StartCoroutine(CheckAnimationCompleted("Shoot", () =>
+			//{
+			//	FinishAnimationShoot();
+			//}
+   //         ));
 
 			if (_audioSource && bang != null)
                 _audioSource.PlayOneShot(bang);
@@ -231,8 +226,10 @@ public class AdvancedPlayerController : BasicPlayerController
     private void Shoot()
     {
         Vector2 harpoonPosition = transform.position;       
-
-        harpoonPosition += new Vector2(+0.12f, -3.82f);
+        if(currentDirection == Direction.right)
+            harpoonPosition += new Vector2(+0.12f, -3.82f);
+        else
+            harpoonPosition += new Vector2(-0.12f, -3.82f);
         harpoonInstance.transform.position = harpoonPosition;
         harpoonInstance.SetActive(true);
         //harpoonInstance = Instantiate(harpoon, harpoonPosition, Quaternion.identity);

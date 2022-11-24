@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Ceiling
   - Harpoon
   - Enemy
-  - Ceiling
   layers:
   - Default
   - TransparentFX
@@ -14,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - EnemyBalls
-  - Walls
-  - Ground
+  - Enemy
+  - 
+  - 
   - 
   - 
   - 

@@ -91,7 +91,7 @@ public class BallController : GameElement
         if (!waitAMoment)
         {
             if (sizeOfBall==Size.small && transform.position.y>4f && _rigidbody.velocity.y>0)
-                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y*0.7f);
+                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y*0.75f);
 
             if (_rigidbody.velocity.x < force)
             {
